@@ -1,11 +1,12 @@
-import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/heroSection";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function Home() {
   return (
-    <div>
-      <Button>Generate Quote</Button>
+    <main>
       <ThemeToggle />
-    </div>
+      <HeroSection />
+    
+    </main>
   );
 }
