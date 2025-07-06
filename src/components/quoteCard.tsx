@@ -1,11 +1,15 @@
+import { memo } from "react";
+
 type QuoteCardProps = {
   quote: string;
 };
 
-export default function QuoteCard({ quote }: QuoteCardProps) {
+const QuoteCard = memo(function QuoteCard({ quote }: QuoteCardProps) {
   return (
-    <div className="bg-white text-gray-800 p-4 rounded-xl shadow-md w-full sm:w-1/3">
-      <p className="text-base italic">"{quote}"</p>
+    <div className="bg-white text-gray-800 p-6 rounded-xl shadow-md w-full sm:w-80 h-44 flex items-center justify-center">
+      <p className="text-base italic text-center">"{quote}"</p>
     </div>
   );
-}
+});
+
+export default QuoteCard;

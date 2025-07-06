@@ -56,83 +56,67 @@
     ]
   },
   {
-    "topic": "Leadership",
-    "quotes": [
-      "Leadership is not about being in charge. It is about taking care of those in your charge.",
-      "The function of leadership is to produce more leaders, not more followers.",
-      "A leader is one who knows the way, goes the way, and shows the way."
-    ]
+      "topic": "Wisdom",
+      "quotes": [
+      "The only true wisdom is in knowing you know nothing.",
+      "Wisdom begins in wonder.",
+      "The journey of a thousand miles begins with one step."
+      ]
   },
-    {
-        "topic": "Wisdom",
-        "quotes": [
-        "The only true wisdom is in knowing you know nothing.",
-        "Wisdom begins in wonder.",
-        "The journey of a thousand miles begins with one step."
-        ]
-    },
-    {
-        "topic": "Kindness",
-        "quotes": [
-        "Kindness is the language which the deaf can hear and the blind can see.",
-        "No act of kindness, no matter how small, is ever wasted.",
-        "Kindness in words creates confidence. Kindness in thinking creates profoundness. Kindness in giving creates love."
-        ]
-    },
-    {
-        "topic": "Gratitude",
-        "quotes": [
-        "Gratitude turns what we have into enough.",
-        "Gratitude is not only the greatest of virtues, but the parent of all others.",
-        "The more grateful I am, the more beauty I see."
-        ]
-    },
-    {
-        "topic": "Courage",
-        "quotes": [
-        "Courage is not the absence of fear, but the triumph over it.",
-        "It takes courage to grow up and become who you really are.",
-        "Courage is grace under pressure."
-        ]
-    },
-    {
-        "topic": "Empathy",
-        "quotes": [
-        "Empathy is about finding echoes of another person in yourself.",
-        "The highest form of knowledge is empathy.",
-        "Whenever you feel like criticizing any one, just remember that all the people in this world haven’t had the advantages that you’ve had."
-        ]
-    },
-    {
-        "topic": "Dreams",
-        "quotes": [
-        "The future belongs to those who believe in the beauty of their dreams.",
-        "Dream big and dare to fail.",
-        "All our dreams can come true, if we have the courage to pursue them."
-        ]
-    },
-    {
-        "topic": "Friendship",
-        "quotes": [
-        "A friend is someone who knows all about you and still loves you.",
-        "Friendship is born at that moment when one person says to another, 'What! You too? I thought I was the only one.'",
-        "True friendship comes when the silence between two people is comfortable."
-        ]
-    },
-    {
-        "topic": "Love",
-        "quotes": [
-        "Love all, trust a few, do wrong to none.",
-        "Where there is love there is life.",
-        "The best thing to hold onto in life is each other."
-        ]
-    },
-    {
-        "topic": "Health",
-        "quotes": [
-        "It is health that is real wealth and not pieces of gold and silver.",
-        "Take care of your body. It’s the only place you have to live.",
-        "Good health and good sense are two of life’s greatest blessings."
-        ]
-    }
+  {
+      "topic": "Kindness",
+      "quotes": [
+      "Kindness is the language which the deaf can hear and the blind can see.",
+      "No act of kindness, no matter how small, is ever wasted.",
+      "Kindness in words creates confidence. Kindness in thinking creates profoundness. Kindness in giving creates love."
+      ]
+  },
+  {
+      "topic": "Gratitude",
+      "quotes": [
+      "Gratitude turns what we have into enough.",
+      "Gratitude is not only the greatest of virtues, but the parent of all others.",
+      "The more grateful I am, the more beauty I see."
+      ]
+  },
+  {
+      "topic": "Courage",
+      "quotes": [
+      "Courage is not the absence of fear, but the triumph over it.",
+      "It takes courage to grow up and become who you really are.",
+      "Courage is grace under pressure."
+      ]
+  },
+  {
+      "topic": "Empathy",
+      "quotes": [
+      "Empathy is about finding echoes of another person in yourself.",
+      "The highest form of knowledge is empathy.",
+      "Whenever you feel like criticizing any one, just remember that all the people in this world haven’t had the advantages that you’ve had."
+      ]
+  },
+  {
+      "topic": "Dreams",
+      "quotes": [
+      "The future belongs to those who believe in the beauty of their dreams.",
+      "Dream big and dare to fail.",
+      "All our dreams can come true, if we have the courage to pursue them."
+      ]
+  },
+  {
+      "topic": "Friendship",
+      "quotes": [
+      "A friend is someone who knows all about you and still loves you.",
+      "Friendship is born at that moment when one person says to another, 'What! You too? I thought I was the only one.'",
+      "True friendship comes when the silence between two people is comfortable."
+      ]
+  },
+  {
+      "topic": "Love",
+      "quotes": [
+      "Love all, trust a few, do wrong to none.",
+      "Where there is love there is life.",
+      "The best thing to hold onto in life is each other."
+      ]
+  }
 ]
