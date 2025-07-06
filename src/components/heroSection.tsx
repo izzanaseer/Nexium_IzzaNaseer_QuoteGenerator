@@ -1,18 +1,35 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { TopicSelect } from "./TopicSelect";
 import { useState } from "react";
+import { TopicSelect } from "./topicSelect";
+import quotesData from "@/app/_data/quotes.json";
+import QuoteCard from "./quoteCard";
 
 export default function HeroSection() {
   const [selectedTopic, setSelectedTopic] = useState("");
+  const [quotes, setQuotes] = useState<string[]>([]);
+
+  const handleTopicChange = (topic: string) => {
+    setSelectedTopic(topic);
+  };
+
+  const handleGetQuote = () => {
+    if (!selectedTopic) return;
+
+    const topicObj = quotesData.find((item) => item.topic === selectedTopic);
+    if (topicObj) {
+      const shuffled = [...topicObj.quotes].sort(() => 0.5 - Math.random());
+      setQuotes(shuffled.slice(0, 3)); // Pick 3 random quotes
+    }
+  };
 
   return (
     <div className="relative">
         {/* Top Section */}
         <div className="h-40 flex flex-col items-center justify-center gap-4">
           <h1 className="text-6xl font-bold text-sky-900">Quote Generator</h1>
-          <TopicSelect onTopicChange={(topic) => setSelectedTopic(topic)} />
-          <Button>Get Quote</Button>
+          <TopicSelect onTopicChange={handleTopicChange} />
+          <Button onClick={handleGetQuote}>Get Quote</Button>
         </div>
 
         {/* Curved Divider */}
@@ -21,8 +38,16 @@ export default function HeroSection() {
         </div>
 
         {/* Bottom Section */}
-        <div className="bg-cyan-700 h-96 p-8">
-          <p className="text-lg text-white">Add here the form, quotes, cards, etc.</p>
+        <div className="bg-cyan-700 p-8 min-h-[300px] flex flex-col items-center justify-center gap-6">
+          {quotes.length > 0 ? (
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                {quotes.map((quote, index) => (
+                <QuoteCard key={index} quote={quote} />
+                ))}
+            </div>
+          ) : (
+            <p className="text-lg text-white"></p>
+          )}
         </div>
       </div>
   );
