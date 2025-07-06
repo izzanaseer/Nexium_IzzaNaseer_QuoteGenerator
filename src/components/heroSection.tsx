@@ -25,24 +25,26 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Top Section */}
-      <div className="flex flex-col items-center justify-center gap-10 pt-20">
-        <h1 className="text-6xl font-bold text-foreground">Quote Generator</h1>
+      <div className="flex flex-col items-center justify-center gap-8 pt-16 sm:pt-20 text-center">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground">
+          Quote Generator
+        </h1>
         <TopicSelect onTopicChange={handleTopicChange} />
         <Button onClick={handleGetQuote}>Get Quote</Button>
       </div>
 
       {/* Bottom Section */}
-      <div className="mt-12 px-8 pb-8 pt-0 min-h-[300px] flex flex-col items-center justify-start gap-6">
+      <div className="mt-12 pb-8 min-h-[300px] flex flex-col items-center justify-start gap-6">
         {quotes.length > 0 ? (
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-              {quotes.map((quote, index) => (
+            {quotes.map((quote, index) => (
               <QuoteCard key={index} quote={quote} />
-              ))}
+            ))}
           </div>
         ) : (
-          <p className="text-lg text-white"></p>
+          <p className="text-lg text-muted-foreground">Select a topic to view quotes.</p>
         )}
       </div>
     </div>
