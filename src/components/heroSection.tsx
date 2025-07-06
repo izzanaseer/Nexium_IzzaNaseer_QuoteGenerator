@@ -27,8 +27,8 @@ export default function HeroSection() {
   return (
     <div className="relative">
       {/* Top Section */}
-      <div className="flex flex-col items-center justify-center gap-4 pt-8">
-        <h1 className="text-6xl font-bold text-sky-900">Quote Generator</h1>
+      <div className="flex flex-col items-center justify-center gap-10 pt-20">
+        <h1 className="text-6xl font-bold text-foreground">Quote Generator</h1>
         <TopicSelect onTopicChange={handleTopicChange} />
         <Button onClick={handleGetQuote}>Get Quote</Button>
       </div>
