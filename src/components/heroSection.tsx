@@ -27,16 +27,15 @@ export default function HeroSection() {
   return (
     <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Header Section */}
-      <header className="py-16 text-center">
+      <div className="py-16 text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-8">
           Quote Generator
         </h1>
-        {/* Changed flex-row to flex-col for sm screens and up */}
         <div className="flex flex-col items-center justify-center gap-4">
           <TopicSelect onTopicChange={handleTopicChange} />
-          <Button onClick={handleGetQuote}>Get Quote(s)</Button>
+          <Button onClick={handleGetQuote}>Get Quote</Button>
         </div>
-      </header>
+      </div>
 
       {/* Quotes Display Section */}
       <section className="min-h-[300px] py-8 flex flex-col items-center justify-start">
@@ -47,37 +46,11 @@ export default function HeroSection() {
             ))}
           </div>
         ) : (
-          <p className="text-lg text-muted-foreground">
-            Select a topic to view quotes.
-          </p>
+          <div className="flex justify-center w-full">
+            <QuoteCard quote="Choose a topic to view quotes." />
+          </div>
         )}
       </section>
     </div>
-
-
-
-    // <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    //   {/* Top Section */}
-    //   <div className="flex flex-col items-center justify-center gap-8 pt-16 sm:pt-20 text-center">
-    //     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground">
-    //       Quote Generator
-    //     </h1>
-    //     <TopicSelect onTopicChange={handleTopicChange} />
-    //     <Button onClick={handleGetQuote}>Get Quote</Button>
-    //   </div>
-
-    //   {/* Bottom Section */}
-    //   <div className="mt-12 pb-8 min-h-[300px] flex flex-col items-center justify-start gap-6">
-    //     {quotes.length > 0 ? (
-    //       <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-    //         {quotes.map((quote, index) => (
-    //           <QuoteCard key={index} quote={quote} />
-    //         ))}
-    //       </div>
-    //     ) : (
-    //       <p className="text-lg text-muted-foreground">Select a topic to view quotes.</p>
-    //     )}
-    //   </div>
-    // </div>
   );
 }
