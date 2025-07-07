@@ -10,7 +10,7 @@ export default function Navbar() {
         <Link href="/">
           <h1 className="text-2xl sm:text-3xl font-bold font-serif tracking-tight hover:opacity-80 transition">Mehwr.</h1>
         </Link>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center px-2">
           <ThemeToggle />
         </div>
       </div>

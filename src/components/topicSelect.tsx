@@ -19,7 +19,7 @@ export function TopicSelect({ onTopicChange }: TopicSelectProps) {
 
     return (
     <Select onValueChange={handleChange}>
-      <SelectTrigger className="w-104">
+      <SelectTrigger className="w-full sm:w-64 md:w-80 lg:w-96">
         <SelectValue placeholder="Select a topic" />
       </SelectTrigger>
 
