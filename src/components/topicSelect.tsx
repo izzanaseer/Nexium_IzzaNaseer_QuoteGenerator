@@ -1,6 +1,6 @@
 "use client";
 
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger,
+import { Select, SelectContent, SelectItem, SelectTrigger,
     SelectValue } from "@/components/ui/select";
 import quotesData from "@/app/_data/quotes.json";
 import { useState } from "react";
@@ -10,10 +10,10 @@ type TopicSelectProps = {
 };
 
 export function TopicSelect({ onTopicChange }: TopicSelectProps) {
-    const [selected, setSelected] = useState("");
+    // const [selected, setSelected] = useState("");
 
     const handleChange = (value: string) => {
-        setSelected(value);
+        // setSelected(value);
         onTopicChange(value);
     };
 
