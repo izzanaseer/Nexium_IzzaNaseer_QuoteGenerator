@@ -3,7 +3,6 @@
 import { Select, SelectContent, SelectItem, SelectTrigger,
     SelectValue } from "@/components/ui/select";
 import quotesData from "@/app/_data/quotes.json";
-import { useState } from "react";
 
 type TopicSelectProps = {
   onTopicChange: (topic: string) => void;
